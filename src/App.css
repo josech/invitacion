@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+ :root {
+	 --font-primary: 'Open Sans';
+	 --font-secondary: 'Dancing Script';
+	 --font-cursive: 'Parisienne';
+	 --primary: #636;
+	 --secondary: #699;
+	 --light: #6c3;
+	 --app-height: 100%;
+	 --height-height: 500px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ * {
+	 box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ #root {
+	 height: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ body {
+	 margin: 0;
+	 font-family: var(--font-primary);
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
 }
-
-.App-link {
-  color: #61dafb;
+ html, body {
+	 padding: 0;
+	 margin: 0;
+	 overflow: hidden;
+	 width: 100vw;
+	 height: 100vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ @media not all and (hover: hover) {
+	 html, body {
+		 height: var(--app-height);
+	}
 }
+ .page {
+	 height: 100%;
+	 overflow-y: auto;
+}
+ img {
+	 display: block;
+}
+ button, a textarea {
+	 outline: none;
+}
+ code {
+	 font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+ 
