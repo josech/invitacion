@@ -4,7 +4,7 @@ import React from 'react';
 import { Page } from './pages/Page.js';
 
 function App() {
-  // const error = false;
+  
   return (    
     <React.Fragment>      
       <Page />

@@ -50,6 +50,9 @@
     letter-spacing: .2em;
     margin-bottom: 15px;
 }
+.page-home__display_none {
+    display: none;
+}
     
 @media (max-height: 400px) and (orientation: landscape) {
 .page-home_content {
@@ -110,3 +113,4 @@
     text-align: center;
     color: #666;
 }
+

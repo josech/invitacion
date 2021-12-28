@@ -1,5 +1,8 @@
 .app {
-    background-image: url('../assets/images/papel.jpg');
+    /* background-image: url('../assets/images/papel.jpg'); */
+    /* background-image: url('../assets/images/fondo.webp'); */
+    background: url('../assets/images/fondo2.webp') no-repeat center center fixed; 
+    background-size: 100% 100%;
     text-align: center;
     width: 100%;
     height: var(--app-height);
