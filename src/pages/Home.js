@@ -1,6 +1,5 @@
 import React from "react";
 import { Hearts } from "../components/hearts/Hearts";
-//import Lottie from "react-lottie";
 import "./Home.css";
 
 function Home({persona, setPersona}) {
@@ -23,8 +22,7 @@ function Home({persona, setPersona}) {
   }
 
   return (
-    //<div className="page page-home">
-    <div className={`page page-home ${persona.primer_nombre && 'page-home__display_none'}`}>  
+    <div className={`page page-home ${persona.primer_nombre && 'page-home__display_none'}`}>      
       <Hearts />
       <div className="page-home__content">
         <div>
