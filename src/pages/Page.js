@@ -12,7 +12,7 @@ function Page() {
     const [persona, setPersona] = React.useState({
                                     apellido_materno: '',
                                     apellido_paterno: '',
-                                    primer_nombre: '',
+                                    primer_nombre: 'José',
                                     segundo_nombre: '',
                                     url_imagen: '',
                                     dni: ''
