@@ -8,12 +8,12 @@
     color: rgba(80,80,80,1);    
     font-family: 'Pacifico';    
     font-weight: 300;
-    font-size: 23px;
+    font-size: 20px;
     height: auto;
     margin: 30px auto;
-    width: 614px;  
+    width: 90%;  
 }
 
-tarjeta-content{
-    padding: 0 10px;
+.tarjeta-content{
+    padding: 5px 10px;
 }
