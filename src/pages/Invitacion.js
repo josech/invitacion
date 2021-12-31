@@ -3,6 +3,7 @@ import './Page.css';
 import "./Invitacion.css";
 import { Contador } from "../components/contador/Contador";
 import { Tarjeta } from "../components/tarjeta/Tarjeta";
+import { Ceremonia } from "../components/ceremonia/Ceremonia";
 
 function Invitacion({persona}){
     return (        
@@ -31,6 +32,7 @@ function Invitacion({persona}){
                     </div>
                     <Contador />
                     <Tarjeta />
+                    <Ceremonia />
                     {/* <a className="page-invitation__falabella" target="_blank" href="https://www.noviosfalabella.com.pe/novios-pe/public/resultadoBusquedaNovios.do?categoria=todas&amp;idsJerarquias=&amp;nombreCategoria=&amp;nivelCategoria=&amp;codigoEvento=&amp;dvEvento=&amp;radTipoBusqueda=1&amp;txtBusqueda=656316-03">Ver lista de novios: <strong>656316-03</strong></a>
                     <div className="page-invitation__buttons">
                         <button className="app-button app-button--block app-button--secondary">Ver mapa</button>

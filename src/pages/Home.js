@@ -23,7 +23,7 @@ function Home({persona, setPersona}) {
 
   return (
     <div className={`page page-home ${persona.primer_nombre && 'page-home__display_none'}`}>      
-      <Hearts />
+      {/* <Hearts /> */}
       <div className="page-home__content">
         <div>
           <h1 className="page-home__title">Nuestra boda</h1>
