@@ -3,7 +3,7 @@ import { Hearts } from "../components/hearts/Hearts";
 import "./Home.css";
 
 function Home({persona, setPersona}) {
-  const url="https://josech-proyect-invitacion.rj.r.appspot.com/invitado/";
+  const url="https://josech-proyect-invitacion.rj.r.appspot.com/persona/";
   const [mensaje, setMensaje]  = React.useState('');  
   
   let dni = "";
@@ -22,7 +22,7 @@ function Home({persona, setPersona}) {
   }
 
   return (
-    <div className={`page page-home ${persona.primer_nombre && 'page-home__display_none'}`}>      
+    <div className={`page page-home ${persona.nombres && 'page-home__display_none'}`}>      
       {/* <Hearts /> */}
       <div className="page-home__content">
         <div>

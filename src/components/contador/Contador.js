@@ -2,7 +2,6 @@ import React from "react";
 import './Contador.css';
 
 function Contador(){
-
     const deadline = new Date(2022,3,30,12,0,0);
 
     const [contador, setContador] = React.useState({
@@ -40,7 +39,7 @@ function Contador(){
     );
 
     return(
-        <div className="contador">
+        <div className="contador">            
             <div className="contador-bloque">
                 <div>{contador.remainDays}</div>
                 <div className="contador-bloque-letra">Días</div>

@@ -10,18 +10,14 @@ import {Invitacion} from './Invitacion.js';
 
 function Page() {
     const [persona, setPersona] = React.useState({
-                                    apellido_materno: '',
-                                    apellido_paterno: '',
-                                    primer_nombre: '',
-                                    segundo_nombre: '',
-                                    url_imagen: '',
+                                    apellidoMaterno: '',
+                                    apellidoPaterno: '',
+                                    nombres: '',
+                                    urlImagen: '',
                                     dni: ''
                                 });
 
-    if(persona.primer_nombre !== ""){
-        
-    }
-
+    
     return (
         <div className="app">
             {/* <div className="app__top app__top--r">
