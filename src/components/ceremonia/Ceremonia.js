@@ -5,7 +5,7 @@ function Ceremonia ({setOpenModal}) {
     const img_ceremonia = require('../../assets/images/ceremonia_celebracion.png');
 
     const comoLlegar = () => {
-        setOpenModal(true);
+        document.getElementById("modal").style.display="flex";
     }
 
     return (
