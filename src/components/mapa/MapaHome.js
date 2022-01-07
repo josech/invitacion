@@ -10,10 +10,11 @@ function MapaHome(){
     const allowfullscreenMap=""
     const loadingMap="lazy"
     const paddingMap="50px";
+    const scrollingMap = 'no';
 
     return (
       <div className="conte-mapa">
-        <iframe src={scrMapHome} width={widthMap} height={heightMap} padding={paddingMap} loading={loadingMap}>
+        <iframe src={scrMapHome} width={widthMap} height={heightMap} padding={paddingMap} loading={loadingMap} scrolling={scrollingMap}>
         </iframe>
       </div>
     )

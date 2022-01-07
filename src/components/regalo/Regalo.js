@@ -15,10 +15,11 @@ function Regalo () {
                 <img src={img_regalo} alt=""></img>
                 <div className="regalo-titulo">Regalo</div>
                 <div className="regalo-texto">
-                    Para nosotros lo más importante es compartir <br />
-                    contigo nuestro gran día, y si deseas<br />
-                    darnos un obsequio lo puedes hacer por<br />
-                    los siguientes medios ... te lo agradecemos <br />
+                    Para nosotros lo más importante es <br />
+                    compartir contigo nuestro gran día, <br />
+                    y si deseas darnos un obsequio lo <br />
+                    puedes hacer por los siguientes medios ... <br />
+                    te lo agradecemos <br />
                     <br />
                     <strong>Cta: </strong>0011-0284-0200548693 - BBVA<br />
                     <strong>CCI: </strong>011-284-000200548693-77 - BBVA <br />
