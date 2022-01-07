@@ -23,7 +23,7 @@ function Regalo () {
                     <br />
                     <strong>Cta: </strong>0011-0284-0200548693 - BBVA<br />
                     <strong>CCI: </strong>011-284-000200548693-77 - BBVA <br />
-                    <strong>Novios Falabella: </strong> <a href="https://www.noviosfalabella.com.pe/" target="_blank" >123456</a> <br />
+                    <strong>Novios Falabella: </strong> <a href="https://www.noviosfalabella.com.pe/" target="_blank" rel="noopener noreferrer" >123456</a> <br />
                     <strong>Dirección:</strong>
                     Jr. Pedro Ruiz Gallo 457 - San Martin de Porres 
                     <img className="regalo-marker" src={img_marker} onClick={openDireccion} alt=""></img>
