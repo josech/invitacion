@@ -6,11 +6,14 @@ import {Invitacion} from './Invitacion.js';
 
 function Page() {
     const [persona, setPersona] = React.useState({
+                                    entryId: '',
                                     apellidoMaterno: '',
                                     apellidoPaterno: '',
                                     nombres: '',
                                     urlImagen: '',
-                                    dni: ''
+                                    dni: '',
+                                    primerNombre: '',
+                                    confirmacion: ''
                                 });
 
     

@@ -3,7 +3,7 @@ import { Hearts } from "../components/hearts/Hearts";
 import "./Home.css";
 
 function Home({persona, setPersona}) {
-  const url="https://josech-proyect-invitacion.rj.r.appspot.com/persona/";
+  const url="https://josech-proyect-invitacion.rj.r.appspot.com/invitado/";
   const [mensaje, setMensaje]  = React.useState('');  
   
   let dni = "";
@@ -17,8 +17,14 @@ function Home({persona, setPersona}) {
       setMensaje('Por favor, ingrese su DNI correctamente');
     }
     else{
-      setPersona(responseJson[0]);      
+      const primerNombre = {'primerNombre': capitalizarPrimeraLetra(responseJson[0].nombres)};
+      const finalResult = Object.assign(responseJson[0], primerNombre);      
+      setPersona(finalResult);      
     }    
+  }
+
+  const capitalizarPrimeraLetra = (str) => {
+    return str.split(' ')[0].toLowerCase().charAt(0).toUpperCase() + str.split(' ')[0].toLowerCase().slice(1);
   }
 
   return (

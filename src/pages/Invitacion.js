@@ -8,9 +8,10 @@ import { Ceremonia } from "../components/ceremonia/Ceremonia";
 import { Mapa } from "../components/mapa/Mapa";
 import { MapaHome } from "../components/mapa/MapaHome";
 import { Regalo } from "../components/regalo/Regalo";
+import { Confirmacion } from "../components/confirmacion/Confirmacion";
 
 function Invitacion({persona}){
-    const [openModal, setOpenModal] = React.useState(false);
+    //const [openModal, setOpenModal] = React.useState(false);
 
     const cancelMap = () =>{        
         document.getElementById("modal").style.display="none";
@@ -26,7 +27,7 @@ function Invitacion({persona}){
                 <div className="page-invitation__content__area">
                     <img className="page-invitation__image" src={persona.urlImagen} alt="" />
                     <div className="page-invitation__message">
-                        Hola {persona.nombres}, 
+                        Hola {persona.primerNombre}, 
                         <br/>Te invitamos a celebrar nuestra boda, 
                         <br/>para nosotros es muy importante  
                         <br/>contar con tu presencia.
@@ -48,6 +49,7 @@ function Invitacion({persona}){
                     <Tarjeta />                    
                     <Ceremonia />
                     <Regalo />
+                    <Confirmacion />
                     {/* <a className="page-invitation__falabella" target="_blank" href="https://www.noviosfalabella.com.pe/novios-pe/public/resultadoBusquedaNovios.do?categoria=todas&amp;idsJerarquias=&amp;nombreCategoria=&amp;nivelCategoria=&amp;codigoEvento=&amp;dvEvento=&amp;radTipoBusqueda=1&amp;txtBusqueda=656316-03">Ver lista de novios: <strong>656316-03</strong></a>
                     <div className="page-invitation__buttons">
                         <button className="app-button app-button--block app-button--secondary">Ver mapa</button>
