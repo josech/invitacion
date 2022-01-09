@@ -6,7 +6,7 @@ function Regalo () {
     const img_marker = require('../../assets/images/marker.png');
 
     const openDireccion = () => {
-        document.getElementById("modal-home").style.display="flex";
+        document.getElementById("modal-home").style.display="flex";        
     }
 
     return (

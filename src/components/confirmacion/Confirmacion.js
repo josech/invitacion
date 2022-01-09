@@ -1,11 +1,13 @@
 import React from "react";
 import './Confirmacion.css';
+import $ from 'jquery';
 
 function Confirmacion () {
     const img_confirmacion = require('../../assets/images/confirmacion.webp');
     
     const confirmar = () => {
-        //
+        // $("#confirmacion-content").fadeIn(0);
+        $("#confirmacion-content").html("Gracias por confirmar tu asistencia :)");
     }
 
     /* const verificarDNI = async (event) => {
@@ -25,7 +27,7 @@ function Confirmacion () {
 
     return (
         <div className="confirmacion">
-            <div className="confirmacion-content">
+            <div id="confirmacion-content" className="confirmacion-content">
                 <img src={img_confirmacion} alt=""></img>
                 <div className="confirmacion-titulo">Confirma tu Asistencia</div>
                 <div className="confirmacion-texto">
@@ -33,8 +35,7 @@ function Confirmacion () {
                     confirmes esta invitación, gracias.<br />                                        
                 </div>
                 <button onClick={confirmar}>Confirmar</button>
-                <div>
-
+                <div id="confirmacion-mensaje">                    
                 </div>
             </div>
         </div>

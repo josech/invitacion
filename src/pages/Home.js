@@ -1,5 +1,5 @@
 import React from "react";
-import { Hearts } from "../components/hearts/Hearts";
+/* import { Hearts } from "../components/hearts/Hearts"; */
 import "./Home.css";
 
 function Home({persona, setPersona}) {
