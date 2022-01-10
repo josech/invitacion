@@ -9,7 +9,7 @@ function Page() {
                                     entryId: '',
                                     apellidoMaterno: '',
                                     apellidoPaterno: '',
-                                    nombres: 'José',
+                                    nombres: '',
                                     urlImagen: '',
                                     dni: '',
                                     primerNombre: '',

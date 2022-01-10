@@ -1,6 +1,7 @@
 import React from "react";
 import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
 import './Mapa.css';
+/* import credentials from "../../credentials"; */
 
 function MapaCasaApi(){
   
@@ -17,7 +18,7 @@ function MapaCasaApi(){
   return (
     <div className="conte-mapa">
     <LoadScript
-      googleMapsApiKey="AIzaSyAVUbyAzidDxTKEWcvxqqDCCyq72hrc5PQ"
+      googleMapsApiKey={process.env.REACT_APP_API}
     >
       <GoogleMap
         mapContainerStyle={containerStyle}
