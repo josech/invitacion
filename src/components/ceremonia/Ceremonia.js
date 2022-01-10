@@ -11,6 +11,8 @@ function Ceremonia ({setOpenModal}) {
         console.log("GM2: " + process.env.GM2);
         console.log("GM3: " + process.env.GM_3);
         console.log("GM4: " + process.env.GM3);
+        console.log("REACT_APP_KEY_MAPS: " + process.env.REACT_APP_KEY_MAPS);        
+        console.log("REACT_APP_KEY_MAPS_S: " + process.env.REACT_APP_KEY_MAPS_S);    
     }
 
     return (

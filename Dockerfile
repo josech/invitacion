@@ -17,6 +17,7 @@ COPY --from=build /app/build /usr/share/nginx/html
 ENV GM1 KEY_GOOGLE_MAPS
 ENV GM2 "KEY_GOOGLE_MAPS"
 ENV GM_3 GM3
+ENV REACT_APP_KEY_MAPS_S REACT_APP_KEY_MAPS
 
 EXPOSE 443
 CMD ["nginx", "-g", "daemon off;"]
