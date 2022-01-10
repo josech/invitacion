@@ -4,8 +4,6 @@ import './Ceremonia.css';
 function Ceremonia ({setOpenModal}) {
     const img_ceremonia = require('../../assets/images/ceremonia_celebracion.png');
     
-    const vari = ${KEY_GOOGLE_MAPS};
-
     const comoLlegar = () => {
         document.getElementById("modal").style.display="flex";
         console.log("NODE_ENV: " + process.env.NODE_ENV);
