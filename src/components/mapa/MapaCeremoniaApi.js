@@ -15,7 +15,7 @@ function MapaCeremoniaApi(){
     lng: -76.938253
   };
 
-  const keyGoogleMaps = process.env.KEY_GOOGLE_MAPS;
+  const keyGoogleMaps = "AIzaSyAt9SNFD_AYZODUBfxajLtVlMGPIJYc_KQ";
 
   return (
     <div className="conte-mapa">

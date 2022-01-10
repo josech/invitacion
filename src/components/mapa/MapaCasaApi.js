@@ -15,7 +15,7 @@ function MapaCasaApi(){
     lng: -77.082626
   };
 
-  const keyGoogleMaps = process.env.KEY_GOOGLE_MAPS;
+  const keyGoogleMaps = "AIzaSyAt9SNFD_AYZODUBfxajLtVlMGPIJYc_KQ";
 
   return (
     <div className="conte-mapa">

@@ -5,11 +5,7 @@ function Ceremonia ({setOpenModal}) {
     const img_ceremonia = require('../../assets/images/ceremonia_celebracion.png');
     
     const comoLlegar = () => {
-        document.getElementById("modal").style.display="flex";
-        console.log("NODE_ENV: " + process.env.NODE_ENV);
-        console.log("GM3: " + process.env.GM3);
-        console.log("REACT_APP_KEY_MAPS: " + process.env.REACT_APP_KEY_MAPS);
-        console.log("KEY_GOOGLE_MAPS: " + process.env.KEY_GOOGLE_MAPS);
+        document.getElementById("modal").style.display="flex";       
     }
 
     return (

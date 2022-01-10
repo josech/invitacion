@@ -2,10 +2,6 @@ FROM node:16-alpine as build
 
 WORKDIR /app
 
-ENV GM3="$GM3"
-ENV GMREACT_APP_KEY_MAPS3="$REACT_APP_KEY_MAPS"
-ENV KEY_GOOGLE_MAPS="$KEY_GOOGLE_MAPS"
-
 COPY package*.json ./
 RUN npm install
 COPY . .
