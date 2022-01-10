@@ -9,6 +9,8 @@ function Ceremonia ({setOpenModal}) {
         console.log("KEY_GOOGLE_MAPS: " + process.env.KEY_GOOGLE_MAPS);
         console.log("GM1: " + process.env.GM1);
         console.log("GM2: " + process.env.GM2);
+        console.log("GM3: " + process.env.GM_3);
+        console.log("GM4: " + process.env.GM3);
     }
 
     return (
