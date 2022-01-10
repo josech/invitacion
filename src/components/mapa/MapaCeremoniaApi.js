@@ -18,7 +18,7 @@ function MapaCeremoniaApi(){
   return (
     <div className="conte-mapa">
     <LoadScript
-      googleMapsApiKey={process.env.REACT_APP_API}
+      googleMapsApiKey={process.env.KEY-GOOGLE-MAPS}
     >
       <GoogleMap
         mapContainerStyle={containerStyle}
