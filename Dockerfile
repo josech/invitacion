@@ -14,5 +14,8 @@ ADD nginx.conf /etc/nginx/nginx.conf
 
 COPY --from=build /app/build /usr/share/nginx/html
 
+ENV GM1 KEY_GOOGLE_MAPS
+ENV GM2 "KEY_GOOGLE_MAPS"
+
 EXPOSE 443
 CMD ["nginx", "-g", "daemon off;"]

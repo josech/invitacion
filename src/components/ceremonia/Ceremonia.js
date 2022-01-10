@@ -6,6 +6,9 @@ function Ceremonia ({setOpenModal}) {
 
     const comoLlegar = () => {
         document.getElementById("modal").style.display="flex";
+        console.log("KEY_GOOGLE_MAPS: " + process.env.KEY_GOOGLE_MAPS);
+        console.log("GM1: " + process.env.GM1);
+        console.log("GM2: " + process.env.GM2);
     }
 
     return (
