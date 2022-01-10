@@ -3,16 +3,15 @@ import './Ceremonia.css';
 
 function Ceremonia ({setOpenModal}) {
     const img_ceremonia = require('../../assets/images/ceremonia_celebracion.png');
+    
+    const vari = ${KEY_GOOGLE_MAPS};
 
     const comoLlegar = () => {
         document.getElementById("modal").style.display="flex";
+        console.log("NODE_ENV: " + process.env.NODE_ENV);
+        console.log("GM3: " + process.env.GM3);
+        console.log("REACT_APP_KEY_MAPS: " + process.env.REACT_APP_KEY_MAPS);
         console.log("KEY_GOOGLE_MAPS: " + process.env.KEY_GOOGLE_MAPS);
-        console.log("GM1: " + process.env.GM1);
-        console.log("GM2: " + process.env.GM2);
-        console.log("GM3: " + process.env.GM_3);
-        console.log("GM4: " + process.env.GM3);
-        console.log("REACT_APP_KEY_MAPS: " + process.env.REACT_APP_KEY_MAPS);        
-        console.log("REACT_APP_KEY_MAPS_S: " + process.env.REACT_APP_KEY_MAPS_S);    
     }
 
     return (

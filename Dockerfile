@@ -1,6 +1,11 @@
 FROM node:16-alpine as build
 
 WORKDIR /app
+
+ENV GM3 $GM3
+ENV GMREACT_APP_KEY_MAPS3 $REACT_APP_KEY_MAPS
+ENV KEY_GOOGLE_MAPS $KEY_GOOGLE_MAPS
+
 COPY package*.json ./
 RUN npm install
 COPY . .
@@ -13,8 +18,6 @@ WORKDIR /etc/nginx
 ADD nginx.conf /etc/nginx/nginx.conf
 
 COPY --from=build /app/build /usr/share/nginx/html
-
-RUN echo ${KEY_GOOGLE_MAPS}
 
 EXPOSE 443
 CMD ["nginx", "-g", "daemon off;"]
