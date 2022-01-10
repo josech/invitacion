@@ -15,10 +15,12 @@ function MapaCeremoniaApi(){
     lng: -76.938253
   };
 
+  const keyGoogleMaps = process.env.KEY-GOOGLE-MAPS;
+
   return (
     <div className="conte-mapa">
     <LoadScript
-      googleMapsApiKey={process.env.KEY-GOOGLE-MAPS}
+      googleMapsApiKey={keyGoogleMaps}
     >
       <GoogleMap
         mapContainerStyle={containerStyle}
