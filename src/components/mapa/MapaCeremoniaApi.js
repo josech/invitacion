@@ -7,7 +7,8 @@ function MapaCeremoniaApi(){
   
   const containerStyle = {
     width: '100%',
-    height: '100%'
+    height: '100%',
+    minWidth: '1px'
   };
   
   const center = {
@@ -25,7 +26,7 @@ function MapaCeremoniaApi(){
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={17}        
+        zoom={16}        
       >        
         <Marker position={center} />
         <InfoWindow          

@@ -14,6 +14,7 @@ import { Confirmacion } from "../components/confirmacion/Confirmacion";
 
 function Invitacion({persona}){
     //const [openModal, setOpenModal] = React.useState(false);
+    const img_cerrar = require('../assets/images/btn_regresar.png');
 
     const cancelMap = () =>{        
         document.getElementById("modal").style.display="none";
@@ -61,13 +62,15 @@ function Invitacion({persona}){
                 </div>     
             </div>
             <div id="modal" className="modalBackground modal-display-none">
-                <span className="close" onClick={cancelMap}>                   
-                </span>
+                {/* <span className="close" onClick={cancelMap}>
+                </span> */}
+                <button type="button" className="btnCerrar" onClick={cancelMap}><img src={img_cerrar} height ="32" width="32" /></button>
                 <MapaCeremoniaApi />
             </div>
             <div id="modal-home" className="modalBackground modal-display-none">
-                <span className="close" onClick={cancelHome}>                   
-                </span>
+                {/* <span className="close" onClick={cancelHome}>                    
+                </span> */}
+                <button type="button" className="btnCerrar" onClick={cancelHome}><img src={img_cerrar} height ="32" width="32" /></button>
                 <MapaCasaApi />
             </div>
             {/* {!!openModal && (

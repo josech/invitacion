@@ -11,9 +11,9 @@
 
 .infoWindow {
    background: white;
-   border: 1px solid #ccc;
-   padding: 5px;
-   color: black;   
+   /* border: 1px solid #ccc; */
+   /* padding: 5px; */
+   color: black;
 }
 
 .infoWindow-title {    
