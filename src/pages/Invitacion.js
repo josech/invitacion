@@ -7,8 +7,8 @@ import { Ceremonia } from "../components/ceremonia/Ceremonia";
 /* import { Modal } from "../components/modal/Modal"; */
 /* import { Mapa } from "../components/mapa/Mapa"; */
 /* import { MapaHome } from "../components/mapa/MapaHome"; */
-import { MapaCeremoniaApi } from "../components/mapa/MapaCeremoniaApi";
-import { MapaCasaApi } from "../components/mapa/MapaCasaApi";
+/* import { MapaCeremoniaApi } from "../components/mapa/MapaCeremoniaApi";
+import { MapaCasaApi } from "../components/mapa/MapaCasaApi"; */
 import { Regalo } from "../components/regalo/Regalo";
 import { Confirmacion } from "../components/confirmacion/Confirmacion";
 
@@ -52,7 +52,9 @@ function Invitacion({persona}){
                     <Tarjeta />                    
                     <Ceremonia />
                     <Regalo />
-                    <Confirmacion />
+                    <Confirmacion 
+                        entryID={persona.entryID}
+                    />
                     {/* <MapaHomeApi /> */}
                     {/* <a className="page-invitation__falabella" target="_blank" href="https://www.noviosfalabella.com.pe/novios-pe/public/resultadoBusquedaNovios.do?categoria=todas&amp;idsJerarquias=&amp;nombreCategoria=&amp;nivelCategoria=&amp;codigoEvento=&amp;dvEvento=&amp;radTipoBusqueda=1&amp;txtBusqueda=656316-03">Ver lista de novios: <strong>656316-03</strong></a>
                     <div className="page-invitation__buttons">
@@ -61,18 +63,18 @@ function Invitacion({persona}){
                     </div> */}
                 </div>     
             </div>
-            <div id="modal" className="modalBackground modal-display-none">
+            {/* <div id="modal" className="modalBackground modal-display-none"> */}
                 {/* <span className="close" onClick={cancelMap}>
                 </span> */}
-                <button type="button" className="btnCerrar" onClick={cancelMap}><img src={img_cerrar} height ="32" width="32" /></button>
+                {/* <button type="button" className="btnCerrar" onClick={cancelMap}><img src={img_cerrar} height ="32" width="32" /></button>
                 <MapaCeremoniaApi />
-            </div>
-            <div id="modal-home" className="modalBackground modal-display-none">
+            </div> */}
+            {/* <div id="modal-home" className="modalBackground modal-display-none"> */}
                 {/* <span className="close" onClick={cancelHome}>                    
                 </span> */}
-                <button type="button" className="btnCerrar" onClick={cancelHome}><img src={img_cerrar} height ="32" width="32" /></button>
+                {/* <button type="button" className="btnCerrar" onClick={cancelHome}><img src={img_cerrar} height ="32" width="32" /></button>
                 <MapaCasaApi />
-            </div>
+            </div> */}
             {/* {!!openModal && (
             <Modal>
                 <span className="close" onClick={cancelMap}>                   

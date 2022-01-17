@@ -1,13 +1,30 @@
 import React from "react";
 import './Confirmacion.css';
-import $ from 'jquery';
 
-function Confirmacion () {
+function Confirmacion ({entryID}) {
     const img_confirmacion = require('../../assets/images/confirmacion.webp');
-    
-    const confirmar = () => {
-        // $("#confirmacion-content").fadeIn(0);
-        $("#confirmacion-content").html("Gracias por confirmar tu asistencia :)");
+    const url="https://josech-proyect-invitacion.rj.r.appspot.com/invitado/confirmar";
+
+    const confirmar = async () => {
+        // $("#confirmacion-content").html("Gracias por confirmar tu asistencia :)");
+
+        const data = {
+            'id': entryID,
+            'confirmacion': true
+        }
+
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        myHeaders.append('Accept', 'application/json');        
+
+        const response = await fetch(url,{
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: myHeaders
+          }            
+        );        
+        
+        //console.log("");
     }
 
     /* const verificarDNI = async (event) => {
