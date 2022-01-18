@@ -14,7 +14,7 @@ import { Confirmacion } from "../components/confirmacion/Confirmacion";
 
 function Invitacion({persona}){
     //const [openModal, setOpenModal] = React.useState(false);
-    const img_cerrar = require('../assets/images/btn_regresar.png');
+    /* const img_cerrar = require('../assets/images/btn_regresar.png');
 
     const cancelMap = () =>{        
         document.getElementById("modal").style.display="none";
@@ -22,7 +22,7 @@ function Invitacion({persona}){
     
     const cancelHome = () =>{        
         document.getElementById("modal-home").style.display="none";
-    }
+    } */
 
     return (        
         <div className={`page page-invitation ${!persona.nombres && 'page-home__display_none'}`}>
@@ -52,9 +52,12 @@ function Invitacion({persona}){
                     <Tarjeta />                    
                     <Ceremonia />
                     <Regalo />
-                    <Confirmacion 
+                    {!persona.confirmacion && (
+                        <Confirmacion 
                         entryID={persona.entryID}
-                    />
+                        />
+                    )
+                    }                    
                     {/* <MapaHomeApi /> */}
                     {/* <a className="page-invitation__falabella" target="_blank" href="https://www.noviosfalabella.com.pe/novios-pe/public/resultadoBusquedaNovios.do?categoria=todas&amp;idsJerarquias=&amp;nombreCategoria=&amp;nivelCategoria=&amp;codigoEvento=&amp;dvEvento=&amp;radTipoBusqueda=1&amp;txtBusqueda=656316-03">Ver lista de novios: <strong>656316-03</strong></a>
                     <div className="page-invitation__buttons">

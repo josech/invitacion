@@ -6,16 +6,18 @@ function Confirmacion ({entryID}) {
     const url="https://josech-proyect-invitacion.rj.r.appspot.com/invitado/confirmar";
 
     const confirmar = async () => {
-        // $("#confirmacion-content").html("Gracias por confirmar tu asistencia :)");
+        /* $("#confirmacion-content").html("Gracias por confirmar tu asistencia :)"); */
 
         const data = {
-            'id': entryID,
-            'confirmacion': true
+            "id": entryID,
+            "confirmacion": true
         }
 
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
-        myHeaders.append('Accept', 'application/json');        
+        myHeaders.append("Accept", "*/*");
+        myHeaders.append("Connection", "keep-alive");
+        
 
         const response = await fetch(url,{
             method: 'POST',
@@ -24,7 +26,12 @@ function Confirmacion ({entryID}) {
           }            
         );        
         
-        //console.log("");
+        const responseJson = await response.json();
+        
+        if (responseJson.entryID === entryID){
+          document.getElementById("confirmacion-content").innerHTML = "Gracias por confirmar tu asistencia :)";
+        }
+
     }
 
     /* const verificarDNI = async (event) => {

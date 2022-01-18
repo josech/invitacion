@@ -7,7 +7,7 @@ function Regalo () {
 
     const openDireccion = () => {
         //document.getElementById("modal-home").style.display="flex";        
-        window.open('https://www.google.com/maps/place/Pedro+Ruiz+Gallo+457,+Cercado+de+Lima+15107/@-12.0167984,-77.0830322,19z/data=!4m5!3m4!1s0x9105ce947d68f555:0x384e6d2be6ec8db2!8m2!3d-12.0159078!4d-77.0825157', '_blank');
+        window.open('https://www.google.com/maps/place/Jr.+Pedro+Ruiz+Gallo+457+-+San+Martin+de+Porres/@-12.0164126,-77.0848253,17z/data=!3m1!4b1!4m5!3m4!1s0x9105cf4b6f742633:0xb58132cfcb62e073!8m2!3d-12.0164126!4d-77.0826366?hl=es-419', '_blank');
     }
 
     return (
