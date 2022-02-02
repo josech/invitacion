@@ -1,0 +1,10 @@
+.despedida {
+    padding: 10px 0px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 30px auto;
+    color: rgba(80,80,80,1);
+    font-family: 'Pacifico';
+    font-size: 32px;
+}
