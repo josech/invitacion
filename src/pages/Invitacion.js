@@ -13,7 +13,7 @@ import { Regalo } from "../components/regalo/Regalo";
 import { Confirmacion } from "../components/confirmacion/Confirmacion";
 import { ConfirmacionAsistencia } from "../components/confirmacion_asistencia/ConfirmacionAsistencia";
 import { Despedida } from "../components/despedida/Despedida";
-import { Dresscode } from "../components/dresscode/Dresscode";
+// import { Dresscode } from "../components/dresscode/Dresscode";
 
 function Invitacion({persona}){
     //const [openModal, setOpenModal] = React.useState(false);
@@ -55,7 +55,7 @@ function Invitacion({persona}){
                     <Tarjeta />                    
                     <Ceremonia />
                     <Regalo />
-                    <Dresscode />
+                    {/* <Dresscode /> */}
                     {!persona.confirmacion && (
                         <Confirmacion 
                         entryID={persona.entryID}
