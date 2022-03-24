@@ -13,6 +13,7 @@ import { Regalo } from "../components/regalo/Regalo";
 import { Confirmacion } from "../components/confirmacion/Confirmacion";
 import { ConfirmacionAsistencia } from "../components/confirmacion_asistencia/ConfirmacionAsistencia";
 import { Despedida } from "../components/despedida/Despedida";
+import { Aviso } from "../components/aviso/Aviso";
 // import { Dresscode } from "../components/dresscode/Dresscode";
 
 function Invitacion({persona}){
@@ -67,7 +68,8 @@ function Invitacion({persona}){
                         entryID={persona.entryID}
                         />
                     )
-                    } 
+                    }
+                    <Aviso /> 
                     <Despedida />                   
                     {/* <MapaHomeApi /> */}
                     {/* <a className="page-invitation__falabella" target="_blank" href="https://www.noviosfalabella.com.pe/novios-pe/public/resultadoBusquedaNovios.do?categoria=todas&amp;idsJerarquias=&amp;nombreCategoria=&amp;nivelCategoria=&amp;codigoEvento=&amp;dvEvento=&amp;radTipoBusqueda=1&amp;txtBusqueda=656316-03">Ver lista de novios: <strong>656316-03</strong></a>
